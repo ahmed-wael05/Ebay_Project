@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBay Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.left, .center, .right {
+    display: flex;
+    align-items: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #0073e6; /* لون أزرق عند التحويل */
+}
+
+
+.center a, .right a, .left span {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.ebay span {
+            font-family: 'Roboto' , sans-serif;
+            font-size: 50px;
+            font-weight: 100;
+            letter-spacing: -9px;
+        }
+        .e { color: red; }
+        .b { color: blue; }
+        .a { color: yellow; }
+        .y { color: green; }
+
+.center a:hover, .right a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+} 
+.A1{
+    color: blue;
+}
+.navbar{
+    text-align: center;
+    padding-left: 180px;
+}
+h3{
+    text-align: left;
+    padding-left: 20px;
+}
+ .cc{
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px 40px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.c {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0 0;
+}
+
+.b20 {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.b2 {
+    background-color:black;
+    color: aliceblue;
+    border-radius: 5px;
+    word-spacing: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+}
+.A3{
+    background:rgb(0, 0, 255);
+    color: aliceblue;
+    
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius:30px;
+
+}
+
+</style>
+<div class="header">
+    <div class="left">
+        <span>Hi, <a href="file:///C:/Users/Gaming%20Store/OneDrive/Desktop/Full%20Stack%20Course/Tasks/Task%205/pages/Sign%20in.html" class="A1"><u>Sign in</u></a> or <a href="file:///C:/Users/Gaming%20Store/OneDrive/Desktop/Full%20Stack%20Course/Tasks/Task%205/pages/page%202.html" class="A1"><u>register</u></a></span>
+    </div>
+    <div class="center">
+        <a href="#">Daily Deals</a>
+        <a href="#">Brand Outlet</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Help & Contact</a>
+    </div>
+    <div class="right">
+        <a href="#">Ship to</a>
+        <a href="#">Sell</a>
+        <a href="#">Watchlist ▼</a>
+        <a href="#">My eBay ▼</a>
+        <span class="icon">🔔</span>
+        <span class="icon">🛒</span>
+    </div>
+</div>
+
+
+<body class="bg-white">
+   
+    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+       
+</head>
+<body>
+    <div class="ebay">
+        <span class="e">e</span>
+        <span class="b">b</span>
+        <span class="a">a</span>
+        <span class="y">y</span>
+    </div>
+        <input type="text" placeholder="Search for anything" class="border p-2 rounded-md w-1/2">
+        <button class="A3">Search</button>
+    </header>
+    <hr>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Explore (New!)</a></li>
+            <li><a href="#">Saved</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Motors</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Collectibles and Art</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Health & Beauty</a></li>
+            <li><a href="#">Industrial Equipment</a></li>
+            <li><a href="#">Home & Garden</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Sell</a></li>
+        </ul>
+    </nav>
+    
+    
+   
+     <div class="A2">
+    <section class="bg-yellow-400 text-center py-10 px-5 mt-4"  >
+        <h2 class="text-3xl font-bold">Discover a kaleidoscope of cards</h2>
+        <p class="mt-2">Build your collection of trading cards and collectible card games.</p>
+        <button class="mt-4 bg-black text-white px-5 py-2 rounded-md">Find your favorites</button>
+    </section>
+     </div>
+    
+   
+    <section class="mt-8 bg-white text-center">
+        <h3 class="text-2xl font-semibold">Explore Popular Categories</h3>
+        <div class="flex justify-center gap-6 mt-6">
+            <div class="text-center">
+                <img src="../photos/Screenshot 2025-02-21 022917.png" alt="Luxury" class="w-20 h-20 rounded-full object-cover">
+                <p>Luxury</p>
+            </div>
+            <div class="text-center">
+                <img src="../photos/puma.webp" alt="Sneakers" class="w-20 h-20 rounded-full object-cover">
+                <p>Sneakers</p>
+            </div>
+            <div class="text-center">
+                <img src="../photos/download bmv.jpg" alt="PGA" class="w-20 h-20 rounded-full object-cover">
+                <p>PGA</p>
+            </div>
+            <div class="text-center">
+                <img src="../photos/download.jpg" alt="Toys" class="w-20 h-20 rounded-full object-cover">
+                <p>Toys</p>
+            </div>
+            <div class="text-center">
+                <img src="../photos/dab.webp" alt="Accessories" class="w-20 h-20 rounded-full object-cover">
+                
+                <p>accessories</p>
+            </div>
+            <div class="text-center">
+                <img src="../photos/pants.jpg" alt="Pants" class="w-20 h-20 rounded-full object-cover">
+                <p>Pants</p>
+            </div>
+            <div class="text-center">
+                <img src="../photos/watch.jpg" alt="Watch" class="w-20 h-20 rounded-full object-cover">
+                <p>Watch</p>
+            </div>
+        </div>
+    </section>
+    <div class="cc">
+    <div class="banner">
+        <div class="text">
+            <h2>Shopping made easy</h2>
+            <c>Enjoy reliability, secure deliveries and hassle-free returns.</c>
+    
+    </div>
+        <button class="b2"> Start now </button>
+    </div>
+    </div>
+    
+    <footer class="bg-gray-100 mt-10 p-6 text-white-700 text-sm">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div>
+                <h3 class="font-semibold">Buy</h3>
+                <ul>
+                    <li>Registration</li>
+                    <li>Bidding & buying help</li>
+                    <li>Stores</li>
+                    <li>eBay for Charity</li>
+                    <li>Gift Cards</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold">Sell</h3>
+                <ul>
+                    <li>Start selling</li>
+                    <li>How to sell</li>
+                    <li>Business sellers</li>
+                    <li>Affiliates</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold">About eBay</h3>
+                <ul>
+                    <li>Company info</li>
+                    <li>Investors</li>
+                    <li>Careers</li>
+                    <li>Policies</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold">Help & Contact</h3>
+                <ul>
+                    <li>Seller Center</li>
+                    <li>Contact Us</li>
+                    <li>eBay Returns</li>
+                </ul>
+                <div class="flex justify-between items-center mt-6 max-w-6xl mx-auto">
+                    <div class="relative">
+                        <select class="border p-2 rounded-md">
+                            <option value="us" selected> United States</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="de">Germany</option>
+                            <option value="fr">France</option>
+                        </select>
+                    </div>
+                    <div class="flex space-x-2">
+                        <button class="bg-gray-200 p-2 rounded-full">▲</button>
+                        <button class="bg-gray-200 p-2 rounded-full">?</button>
+                    </div>
+
+            </div>
+        </div>
+        
+        </div>
+        
+        <div class="text-center mt-6 text-xs text-gray-500">© 1995-2025 eBay Inc. All Rights Reserved.</div>
+    
+    </footer>
+</body>
+</html>

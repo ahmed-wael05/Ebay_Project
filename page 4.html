@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBay Deals</title>
+    <style>
+      
+        
+        .container {
+            width: 90%;
+            max-width: 1200x;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .spotlight {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        .spotlight img {
+            max-width: 70%;
+            height: auto;
+        }
+        .spotlight h2 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+        .deals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px 0;
+        }
+        .deal-item {
+            background: white;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .deal-item img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.left, .center, .right {
+    display: flex;
+    align-items: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.center a, .right a, .left span {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.ebay span {
+            font-family: 'Roboto' , sans-serif;
+            font-size: 50px;
+            font-weight: 100;
+            letter-spacing: -9px;
+        }
+        .e { color: red; }
+        .b { color: blue; }
+        .a { color: yellow; }
+        .y { color: green; }
+
+.center a:hover, .right a:hover {
+    text-decoration: underline;
+}
+.A1{
+    color: blue;
+}
+.A3{
+    background:rgb(0, 0, 255);
+    color: aliceblue;
+    
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius:30px;
+
+}
+        .deal-item h3 {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .deal-item p {
+            color: #f00;
+            font-weight: bold;
+        }
+        .navbar {
+            background: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+        .ebay span {
+            font-family: 'Roboto' , sans-serif;
+            font-size: 50px;
+            font-weight: 100;
+            letter-spacing: -9px;
+        }
+        .e { color: red; }
+        .b { color: blue; }
+        .a { color: yellow; }
+        .y { color: green; }
+        .search-container {
+            display: flex;
+            align-items: center;
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 5px;
+        }
+        .search-container input {
+            border: none;
+            outline: none;
+            padding: 5px;
+            flex: 1;
+            font-size: 16px;
+        }
+        .search-container select {
+            border: none;
+            font-size: 14px;
+            padding: 5px;
+            background: white;
+        }
+        .search-btn {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .ss{
+            padding-left: 23px;
+        }
+        .Q{
+           text-align: center;
+        }
+        .X{
+            width: 100%;
+           
+            
+        }
+       
+    </style>
+</head>
+
+<div class="header">
+    <div class="left">
+        <span>Hi, <a href="file:///C:/Users/Gaming%20Store/OneDrive/Desktop/Full%20Stack%20Course/Tasks/Task%205/pages/Sign%20in.html" class="A1"><u>Sign in</u></a> or <a href="file:///C:/Users/Gaming%20Store/OneDrive/Desktop/Full%20Stack%20Course/Tasks/Task%205/pages/page%202.html" class="A1"><u>register</u></a></span>
+    </div>
+    <div class="center">
+        <a href="#">Daily Deals</a>
+        <a href="#">Brand Outlet</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Help & Contact</a>
+    </div>
+    <div class="right">
+        <a href="#">Ship to</a>
+        <a href="#">Sell</a>
+        <a href="#">Watchlist ▼</a>
+        <a href="#">My eBay ▼</a>
+        <span class="icon">🔔</span>
+        <span class="icon">🛒</span>
+    </div>
+</div>
+
+
+<body>
+    <div class="navbar">
+        <div class="ebay">
+            <span class="e">e</span>
+            <span class="b">b</span>
+            <span class="a">a</span>
+            <span class="y">y</span>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search for anything">
+            <select>
+                <option>All Deals</option>
+            </select>
+        </div>
+        <button class="search-btn">Search</button>
+    </div>
+    </header>
+    
+    <div class="ss">
+        <h2>Deals</h2>
+
+    </div>
+    
+    <div class="container">
+        <div class="spotlight">
+            <img src="../photos/x box.jpg" alt="Xbox Series S" height="35px" width="20%" >
+            <h2>Microsoft Xbox Series S</h2>
+            <p>US $299.00</p>
+        </div>
+        <div class="Q">
+        <h2>FEATURED DEALS</h2>
+        </div>
+        <div class="X">
+        <div class="deals-grid">
+            <div class="deal-item">
+                <img src="../photos/iphone.webp" alt="Product 1">
+                <h3>Apple Iphone 13</h3>
+                <p>US $324.99</p>
+            </div>
+            <div class="deal-item">
+                <img src="../photos/mac.webp" alt="Product 2">
+                <h3>MacBook Air M2</h3>
+                <p>US $668.00</p>
+            </div>
+    
+            <div class="deal-item">
+                <img src="../photos/sam.webp" alt="Product 3">
+                <h3>Samsung Galaxy S22 Ultra</h3>
+                <p>US $354.99</p>
+            </div>
+        
+            
+            </div>
+        </div>
+        <div class="X">
+            <div class="deals-grid">
+            <div class="deal-item">
+                <img src="../photos/ghaz.webp" alt="Product 4">
+                <h3>washing machine</h3>
+                <p>US $400.85</p>
+            </div>
+            <div class="deal-item">
+                <img src="../photos/coldjpg.jpg" alt="Product 5">
+                <h3>air conditioner</h3>
+                <p>US $432.9</p>
+            </div>
+            <div class="deal-item">
+                <img src="../photos/money.jpg" alt="Product 6">
+                <h3>Wallet</h3>
+                <p>US $41.91</p>
+            </div>
+            </div>
+        </div>
+        <div class="X">
+        <div class="deals-grid">
+            <div class="deal-item">
+                <img src="../photos/watch.jpg" alt="Product 7">
+                <h3>Apple smart watch</h3>
+                <p>US $142.4</p>
+            </div>
+            <div class="deal-item">
+                <img src="../photos/puma.webp" alt="Product 8">
+                <h3>Puma Men's Sneakers</h3>
+                <p>US $100.9</p>
+            </div>
+            <div class="deal-item">
+                <img src="../photos/dab.webp" alt="Product 9">
+                <h3>Tedday Pear</h3>
+                <p>US $5.2</p>
+            </div>
+        </div>
+        </div>
+        
+
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>
